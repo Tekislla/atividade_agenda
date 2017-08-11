@@ -31,6 +31,8 @@
 
     <a href="verifica_usuario.php?acao=sair"><button class="btn btn-danger"><span class="glyphicon glyphicon-log-out"></span></button></a>
     <h1 align="center">Bem vindo à agenda pica!</h1>
+    <h4 align="center">João e Guilherme - 2 INFO 2</h4>
+    <br>
     <h6 align="center">(tente cadastrar e editar um contato rsrs)</h6>
     <br>
     <br>

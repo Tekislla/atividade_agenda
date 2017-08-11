@@ -11,7 +11,7 @@
         return $conteudo;
     }
 
-    function transformaJson(array $variavel, string $arquivo){
+    function transformaJson(array $variavel, string $arquivo){                   //FUNÇÃO PARA TRANSFORMAR ARRAY EM JSON
 
         $conteudo = json_encode($variavel, JSON_PRETTY_PRINT);                              //TRANSORMAR ARRAY PARA JSON
         file_put_contents($arquivo, $conteudo);                                     //ATUALIZAR CONTEÚDO DO ARQUIVO JSON
@@ -25,8 +25,8 @@
 
         $contato = [
             "id"       => uniqid(),                                                                     //GERAR ID ÚNICO
-            "nome"     => "joão",                                                   //PEGAR O VALOR 'NOME' DO FORMULÁRIO
-            "email"    => "mereco@um10.com",                                       //PEGAR O VALOR 'EMAIL' DO FORMULÁRIO
+            "nome"     => "joão e gui",                                             //PEGAR O VALOR 'NOME' DO FORMULÁRIO
+            "email"    => "merecemos@um10.com",                                    //PEGAR O VALOR 'EMAIL' DO FORMULÁRIO
             "telefone" => "4002-8922"                                           //PEGAR O VALOR 'TELEFONE' DO FORMULÁRIO
         ];
 
@@ -38,7 +38,7 @@
 
     }                                                                                                    //FIM DA FUNÇÃO
 
-     function cadastrarUsuario(){
+     function cadastrarUsuario(){                                                     //FUNÇÃO PARA CADASTRAR UM USUÁRIO
         
         $usuarios = transformaArray("usuarios.json");                                  //TRANSFORMAR DADOS JSON EM ARRAY
 
@@ -105,7 +105,7 @@
             if ($contato['id'] == $id){                                         //COMPARAR O ID DO CONTATO A SER EDITADO
 
                 $contatosAuxiliar[$posicao]['nome'] = "jeffinho";                         //SUBSTITUIR NOME PELO EDITADO
-                $contatosAuxiliar[$posicao]['email'] = "me@da-um.com";                   //SUBSTITUIR EMAIL PELO EDITADO
+                $contatosAuxiliar[$posicao]['email'] = "nos@da.um";                   //SUBSTITUIR EMAIL PELO EDITADO
                 $contatosAuxiliar[$posicao]['telefone'] = "10zão";                    //SUBSTITUIR TELEFONE PELO EDITADO
 
                 break;                                                                                           //PARAR
